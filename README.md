@@ -43,14 +43,15 @@ Browse [`starter-kits/`](./starter-kits/) for setup guides and examples
 
 ### 3. Watch & Learn
 
-| Date | Track | Event |
-|------|-------|-------|
-| **Mon Feb 16** | 🎨 Creative Apps | [Live Battle on Reactor](https://aka.ms/agentsleague/battle1) |
-| **Wed Feb 18** | 🧠 Reasoning Agents | [Live Battle on Reactor](https://aka.ms/agentsleague/battle2) |
-| **Fri Feb 20** | 💼 Enterprise Agents | [Live Battle on Reactor](https://aka.ms/agentsleague/battle3) |
-| **Mon Feb 23** | 🎨 Creative Apps | [AMA & Show & Tell on Discord](https://aka.ms/agentsleague/discord) |
-| **Wed Feb 25** | 🧠 Reasoning Agents | [AMA & Show & Tell on Discord](https://aka.ms/agentsleague/discord) |
-| **Fri Feb 27** | 💼 Enterprise Agents | [AMA & Show & Tell on Discord](https://aka.ms/agentsleague/discord) |
+**Week 1: Live Battles** - Watch experts build in real-time on [Microsoft Reactor](https://aka.ms/agentsleague/battles)
+- **Mon Feb 16** - 🎨 Creative Apps [Watch Live →](https://aka.ms/agentsleague/battle1)
+- **Wed Feb 18** - 🧠 Reasoning Agents [Watch Live →](https://aka.ms/agentsleague/battle2)
+- **Fri Feb 20** - 💼 Enterprise Agents [Watch Live →](https://aka.ms/agentsleague/battle3)
+
+**Week 2: AMAs & Show & Tell** - Ask questions, get help, see community progress on [Discord](https://aka.ms/agentsleague/discord)
+- **Mon Feb 23** - 🎨 Creative Apps [Join on Discord →](https://aka.ms/agentsleague/discord)
+- **Wed Feb 25** - 🧠 Reasoning Agents [Join on Discord →](https://aka.ms/agentsleague/discord)
+- **Fri Feb 27** - 💼 Enterprise Agents [Join on Discord →](https://aka.ms/agentsleague/discord)
 
 ### 4. Build Your Project
 
