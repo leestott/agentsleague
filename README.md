@@ -35,9 +35,9 @@ Pick one or compete in all three!
 
 | Track | Tool | Challenge | Starter Kit |
 |-------|------|-----------|-------------|
-| 🎨 **Creative Apps** | GitHub Copilot | Build innovative creative applications using AI-assisted development | [View →](./starter-kits/creative-apps/) |
-| 🧠 **Reasoning Agents** | Azure AI Foundry | Create intelligent agents that solve complex problems through multi-step reasoning | [View →](./starter-kits/reasoning-agents/) |
-| 💼 **Enterprise Agents** | M365 Agents Toolkit | Build business-ready knowledge agents integrated with Microsoft 365 | [View →](./starter-kits/enterprise-agents/) |
+| 🎨 **Creative Apps** | GitHub Copilot | Build innovative creative applications using AI-assisted development | [View →](./starter-kits/1-creative-apps/) |
+| 🧠 **Reasoning Agents** | Azure AI Foundry | Create intelligent agents that solve complex problems through multi-step reasoning | [View →](./starter-kits/2-reasoning-agents/) |
+| 💼 **Enterprise Agents** | M365 Agents Toolkit | Build business-ready knowledge agents integrated with Microsoft 365 | [View →](./starter-kits/3-enterprise-agents/) |
 
 ## How to Participate
 
@@ -124,9 +124,9 @@ Projects are evaluated by experts and product teams using this rubric:
 
 ### 📦 Starter Kits (with setup guides & examples)
 
-- [Creative Apps](./starter-kits/creative-apps/) - GitHub Copilot
-- [Reasoning Agents](./starter-kits/reasoning-agents/) - Azure AI Foundry  
-- [Enterprise Agents](./starter-kits/enterprise-agents/) - M365 Toolkit
+- [Creative Apps](./starter-kits/1-creative-apps/) - GitHub Copilot
+- [Reasoning Agents](./starter-kits/2-reasoning-agents/) - Azure AI Foundry  
+- [Enterprise Agents](./starter-kits/3-enterprise-agents/) - M365 Toolkit
 
 ### 💬 Community & Support
 
