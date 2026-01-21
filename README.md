@@ -49,6 +49,7 @@ Registration gives you:
 
 - ✅ Official participant status
 - ✅ Eligibility for prizes and recognition
+- ✅ Digital badge when you submit your project
 
 ### 2. Choose Your Track
 
@@ -88,15 +89,36 @@ Open a new issue in this repo using the [project submission template](https://gi
 
 ## Judging
 
-Projects are evaluated by experts and product teams on:
+Projects are evaluated by experts and product teams using this rubric:
 
-- **Meets challenge requirements** - Does it solve the problem?
-- **Problem-solving approach** - Smart and logical?
-- **Creativity** - Unique or innovative?
-- **User experience** - Well-documented and polished?
-- **Reliability** - Good error handling and security?
+- **Accuracy & Relevance (25%)** — Meets challenge requirements
+- **Reasoning & Multi-step Thinking (25%)** — Clear problem-solving approach
+- **Creativity & Originality (15%)** — Novel ideas or unexpected execution
+- **User Experience & Presentation (15%)** — Clear, polished, demoable
+- **Reliability & Safety (20%)** — Solid patterns, avoids obvious pitfalls
 
-**Bonus**: Community votes for Fan Favorite + Product Team Pick
+**Bonus Points:**
+- **+10 Fan Favorite** — Community vote via Discord poll
+- **+10 Product Team Pick** — Selected by Microsoft product teams
+
+## Prizes & Recognition
+
+### 🎖️ For All Participants
+
+- **Digital Badge** - Everyone who registers and submits a project receives a digital badge
+
+### 🏆 Category Winners
+
+- **$500** for the winner of each track:
+  - 🎨 Creative Apps
+  - 🧠 Reasoning Agents
+  - 💼 Enterprise Agents
+
+### ⭐ Special Recognition
+
+- **GitHub Copilot Pro** - Awarded to:
+  - Community Favorite (voted by community)
+  - Product Team Picks (selected by Microsoft product teams)
 
 ## Resources
 
