@@ -229,16 +229,28 @@ Your solution will be evaluated based on the following requirements and criteria
 
 ### Core Requirements
 
-#### 1. External MCP Server Integration (Required)
+Here you can find the fundamental requirements to be satisfied by your agent.
 
-Your agent **must** integrate with an external **Model Context Protocol (MCP) server** to read and write specific content. The MCP server acts as a bridge between your agent and external data sources or services, enabling your agent to:
+#### 1. Microsoft 365 Copilot Chat Agent (Required)
+
+Your agent **must** be hosted in **Microsoft 365 Copilot Chat**. This means your solution should be designed to run within the Copilot Chat experience, providing users with a seamless conversational interface integrated into the Microsoft 365 ecosystem.
+
+**Important**: Your agent can target **Copilot Free** and does **not** necessarily require a Microsoft 365 Copilot license. This makes your solution accessible to a broader audience, including organizations that have not yet adopted paid Copilot licenses.
+
+### Bonus Criteria (not mandatory)
+
+If you want to get **extra points**, you can also support one or more of the following requirements.
+
+#### 2. External MCP Server Integration (Optional)
+
+Integrating your agent with an external **Model Context Protocol (MCP) server** to read and write specific content is **optional but highly encouraged**. The MCP server acts as a bridge between your agent and external data sources or services, enabling your agent to:
 
 - **Read Operations**: Retrieve data from external systems, databases, or APIs through the MCP server
 - **Write Operations**: Create, update, or modify content in external systems through the MCP server
 
-This requirement ensures that your agent demonstrates real-world integration capabilities and can interact with enterprise systems beyond the Microsoft 365 ecosystem.
+This demonstrates real-world integration capabilities and shows how your agent can interact with enterprise systems beyond the Microsoft 365 ecosystem.
 
-#### 2. OAuth Security for MCP Server (Highly Valued)
+#### 3. OAuth Security for MCP Server (Highly Valued)
 
 Implementing **OAuth-based authentication and authorization** when consuming the MCP server will be **highly appreciated** and will positively impact your evaluation score. Secure MCP server integration should include:
 
@@ -247,9 +259,7 @@ Implementing **OAuth-based authentication and authorization** when consuming the
 - Token refresh mechanisms to maintain continuous access
 - Proper error handling for authentication failures
 
-### Bonus Criteria
-
-#### 3. Adaptive Cards for UI/UX (Plus)
+#### 4. Adaptive Cards for UI/UX (Plus)
 
 Using **Adaptive Cards** for rendering your agent's user interface and user experience will be considered a **plus** in your solution. Adaptive Cards provide:
 
@@ -260,7 +270,7 @@ Using **Adaptive Cards** for rendering your agent's user interface and user expe
 
 Leverage Adaptive Cards to create engaging, intuitive interactions that enhance user productivity.
 
-#### 4. Connected Agents Architecture (Higher Rating)
+#### 5. Connected Agents Architecture (Higher Rating)
 
 A solution that implements **connected agents** (multi-agent architecture) will be **rated higher** than single-agent architectures. Connected agents demonstrate:
 
@@ -275,7 +285,8 @@ Consider designing your solution with multiple agents that collaborate to addres
 
 | Criterion | Impact |
 |-----------|--------|
-| External MCP Server Integration (Read/Write) | **Required** |
+| Microsoft 365 Copilot Chat Agent | **Required** |
+| External MCP Server Integration (Read/Write) | **Optional** |
 | OAuth Security for MCP Server | **Highly Valued** |
 | Adaptive Cards for UI/UX | **Plus** |
 | Connected Agents Architecture | **Higher Rating** |
@@ -316,6 +327,30 @@ Access official Microsoft documentation, tutorials, and learning paths:
 - **10 MCP Servers to Get You Started**: [https://developer.microsoft.com/blog/10-microsoft-mcp-servers-to-accelerate-your-development-workflow](https://developer.microsoft.com/blog/10-microsoft-mcp-servers-to-accelerate-your-development-workflow)
 - **Microsoft Graph API**: [https://learn.microsoft.com/graph/](https://learn.microsoft.com/graph/)
 - **Microsoft 365 Developer Program**: [https://developer.microsoft.com/microsoft-365/dev-program](https://developer.microsoft.com/microsoft-365/dev-program)
+
+---
+
+## ❓ FAQ
+
+### Can I use vibe-coding?
+
+**Yes!** You are welcome to use vibe-coding approaches and AI-assisted development tools to build your solution. Leveraging AI coding assistants like GitHub Copilot to accelerate your development is encouraged.
+
+### Can I use community and open source libraries/SDKs?
+
+**Yes!** You can use community-contributed and open source libraries, SDKs, and frameworks in your solution. Open source tools are a great way to accelerate development and leverage the collective work of the developer community.
+
+### Can I use commercial/proprietary libraries/SDKs?
+
+**No.** The use of commercial or proprietary libraries and SDKs that require paid licenses or are not freely available is not permitted. Your solution should be built using open source or freely available tools to ensure accessibility and reproducibility.
+
+### Can I share a real project that I've been working on for my company or for a customer?
+
+**No.** You cannot submit existing projects that were developed for your company or for customers. All submissions must be original work created specifically for this hackathon. This ensures a fair competition and protects any confidential or proprietary information.
+
+### Do I need to use my own tenant?
+
+**Yes.** Candidates are expected to use their own Microsoft 365 tenant for development and testing. We recommend using a dedicated developer tenant to avoid impacting production environments. For detailed information on setting up a Copilot development environment, please refer to the [Microsoft 365 Copilot extensibility prerequisites](https://aka.ms/extend-Copilot-sandbox).
 
 ---
 
