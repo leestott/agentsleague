@@ -69,9 +69,9 @@ Browse [`starter-kits/`](./starter-kits/) for setup guides and examples
 
 **Week 2: AMAs & Show & Tell** - Ask questions, get help, see community progress on [Discord](https://aka.ms/agentsleague/discord)
 
-- **Tue Feb 24, 9 AM PT** - 🎨 Creative Apps [Join on Discord →](https://aka.ms/agentsleague/discord)
-- **Wed Feb 25, 9 AM PT** - 🧠 Reasoning Agents [Join on Discord →](https://aka.ms/agentsleague/discord)
-- **Thu Feb 26, 9 AM PT** - 💼 Enterprise Agents [Join on Discord →](https://aka.ms/agentsleague/discord)
+- **Tue Feb 24, 9 AM PT** - 🎨 Creative Apps [Join on Discord →](https://aka.ms/agentsleague/discord/ama1)
+- **Wed Feb 25, 9 AM PT** - 🧠 Reasoning Agents [Join on Discord →](https://aka.ms/agentsleague/discord/ama2)
+- **Thu Feb 26, 9 AM PT** - 💼 Enterprise Agents [Join on Discord →](https://aka.ms/agentsleague/discord/ama3)
 
 ### 4. Build Your Project
 
