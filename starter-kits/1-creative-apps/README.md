@@ -8,7 +8,7 @@ Welcome to the Creative Apps track! In this challenge, you will harness the powe
 
 ## 💡 Project Ideas
 
-In this track, we encourage you to build creative applications that demonstrate the power of AI-assisted development with GitHub Copilot. Here are some categories and ideas to inspire your project:
+In this track, we encourage you to build creative applications that demonstrate the power of AI-assisted development with GitHub Copilot. We especially welcome [Copilot CLI](https://docs.github.com/copilot/how-tos/copilot-cli/install-copilot-cli) / [Copilot CLI SDK](https://github.com/github/copilot-sdk) tools and MCP server integrations! Here are some categories and ideas to inspire your project:
 
 ### Content Generation
 
@@ -49,11 +49,16 @@ Craft engaging, conversational, or immersive applications:
 
 Feel free to combine categories, invent entirely new concepts, or explore areas not listed here. **There are no restrictions on application type or technology stack — web, CLI, mobile, desktop, embedded, VR/AR, and more are all welcome!**
 
+> 💡 **Build for GitHub Copilot**: Consider building MCP servers that integrate directly with GitHub Copilot in VS Code or Copilot CLI! Your MCP server can expose tools and data sources that Copilot can use during chat conversations, making your solution available to developers right where they work. See the [MCP in VS Code documentation](https://code.visualstudio.com/docs/copilot/chat/mcp-servers) for how to connect MCP servers to Copilot.
+
 ---
 
 ## 🚀 Quick Start
 
 Get started quickly by setting up VS Code and GitHub Copilot. Follow the official [VS Code Setup Guide](https://code.visualstudio.com/docs/setup/setup-overview) for detailed platform-specific instructions.
+
+<details>
+<summary>📥 Setup Steps (click to expand)</summary>
 
 ### Step 1: Download and Install VS Code
 
@@ -201,11 +206,16 @@ Plan Mode helps you outline your coding tasks and objectives more effectively. C
 5. ✅ Choose your creative project idea and target platform
 6. ✅ Start building and let Copilot accelerate your development!
 
+</details>
+
 ---
 
 ## ✨ Prompting Tips
 
 Effective prompting is key to getting the most out of GitHub Copilot for creative development. Here are tips and techniques to improve your results:
+
+<details>
+<summary>💬 Prompting Techniques & Templates (click to expand)</summary>
 
 ### Use File References for Context
 
@@ -276,6 +286,8 @@ For quick edits directly in the editor (`Ctrl+I` / `Cmd+I`):
 - Use follow-up prompts to refine without rewriting the whole request
 - Ask for explanations of generated code to understand the approach
 
+</details>
+
 ---
 
 ## 🤖 Available Models
@@ -331,6 +343,9 @@ Projects are evaluated using this rubric, which combines scores from expert judg
 
 Explore the following resources to master GitHub Copilot and accelerate your creative development:
 
+<details>
+<summary>📖 Documentation & Learning Resources (click to expand)</summary>
+
 ### GitHub Copilot Documentation
 
 Official documentation and guides for GitHub Copilot:
@@ -348,6 +363,8 @@ Tutorials and courses to enhance your skills:
 - **GitHub Skills - Code with Copilot**: [https://github.com/skills/copilot-codespaces-vscode](https://github.com/skills/copilot-codespaces-vscode)
 - **VS Code Tips and Tricks**: [https://code.visualstudio.com/docs/getstarted/tips-and-tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
+</details>
+
 ---
 
-Questions? Join [Discord](https://aka.ms/agentsleague/discord) #creative-apps channel
+Questions? Join the #creative-apps channel on [Discord](https://aka.ms/agentsleague/discord).
