@@ -6,7 +6,106 @@ Welcome to the Reasoning Agents track! In this challenge, you'll build a multi-a
 
 ---
 
-## 💡 Project Ideas
+## Prerequisites
+
+Before starting this challenge, ensure you have the following:
+
+### Required Skills
+- **Basic Python programming** — variables, functions, classes, and working with APIs
+- **Command line familiarity** — navigating directories, running scripts
+- **Basic understanding of AI concepts** — what LLMs are, prompts, and responses
+
+### Required Accounts (Free Tiers Available)
+| Account | Purpose | Sign Up |
+|---------|---------|---------|
+| **GitHub** | Version control and submission | [github.com](https://github.com) |
+| **Microsoft Azure** | Access to Microsoft Foundry | [azure.microsoft.com/free](https://aka.ms/azure-free-account) |
+| **Discord** | Community support | [aka.ms/agentsleague/discord](https://aka.ms/agentsleague/discord) |
+
+### Required Tools
+- **Python 3.10+** — [python.org/downloads](https://python.org/downloads)
+- **Visual Studio Code** — [code.visualstudio.com](https://code.visualstudio.com)
+- **Git** — [git-scm.com](https://git-scm.com)
+
+### Azure Subscription Notes
+> [!IMPORTANT]
+> Microsoft Foundry requires an Azure subscription. A **free trial** provides $200 credit for 30 days. Some features may incur costs after the trial. Check the [Azure pricing calculator](https://azure.microsoft.com/pricing/calculator/) to estimate costs.
+
+> [!WARNING]
+> **Free Tier Limitations:** The Azure free subscription has significant constraints that may prevent full implementation of this challenge:
+> - **Model access:** Some advanced models (e.g., GPT-5, Claude) may not be available or have very limited quotas
+> - **Rate limits:** Strict API call limits (e.g., requests per minute, tokens per day)
+> - **Region restrictions:** Free tier resources may only be available in limited regions
+> - **Feature restrictions:** Some Microsoft Foundry features (agent orchestration, evaluations) may require pay-as-you-go
+> - **Credit exhaustion:** $200 credit can be consumed quickly with heavy AI model usage
+>
+> **Recommendation:** For full functionality, consider a **pay-as-you-go** subscription or request access to [Azure for Students](https://azure.microsoft.com/free/students/) ($100 credit, no credit card required) or the [Microsoft for Startups Founders Hub](https://www.microsoft.com/startups).
+
+### ⏱️ Time Commitment
+- **Setup**: ~1-2 hours
+- **Learning basics**: ~4-6 hours
+- **Building solution**: ~10-20 hours (varies by complexity)
+
+---
+
+## 🛠️ Environment Setup Guidance
+
+Tips on setting up your development environment:
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/YOUR-USERNAME/agentsleague.git
+cd agentsleague/starter-kits/2-reasoning-agents
+```
+
+### Step 2: Create a Python Virtual Environment
+```bash
+# Windows
+python -m venv .venv
+.venv\Scripts\activate
+
+# macOS/Linux
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+
+### Step 3: Set Up Azure Credentials
+
+1. Go to [Microsoft Foundry Portal](https://ai.azure.com)
+2. Create or select your **AI Project**
+3. In your project, go to **Project settings** (gear icon) → **Project properties**
+4. Copy the **Project connection string**
+5. Create a `.env` file in this directory:
+
+```env
+# Option 1: Use Project Connection String (Recommended)
+# Find this in AI Foundry portal: Project settings → Project properties
+AZURE_AI_PROJECT_CONNECTION_STRING=your-connection-string-here
+
+# Option 2: Use Individual Settings
+# AZURE_SUBSCRIPTION_ID=your-subscription-id
+# AZURE_RESOURCE_GROUP=your-resource-group
+# AZURE_AI_PROJECT_NAME=your-project-name
+
+# Model Deployment Name (from your project's Deployments)
+AZURE_AI_MODEL_DEPLOYMENT=gpt-4o
+```
+
+> [!TIP]
+> **Finding your connection string:**
+> 1. Open [ai.azure.com](https://ai.azure.com)
+> 2. Select your project
+> 3. Click the gear icon (Project settings) → Project properties
+> 4. Copy the "Project connection string"
+
+> [!WARNING]
+> Never commit your `.env` file to GitHub! It's already in `.gitignore`.
+
+
+---
+
+## Project Ideas
 
 In this track, we encourage you to create a multi-agent solution, using one of the following development approaches.
 
@@ -136,7 +235,50 @@ Submissions will be scored using the following weighted criteria:
 
 ---
 
-## 📚 Resources
+## Glossary
+
+New to AI agents? Here's a quick reference for common terms:
+
+| Term | Definition |
+|------|------------|
+| **Agent** | An AI system that can perceive its environment, make decisions, and take actions to achieve goals |
+| **Multi-agent system** | Multiple AI agents working together, each with specialized roles, to solve complex problems |
+| **Orchestration** | Coordinating multiple agents to work together in a defined workflow or sequence |
+| **LLM (Large Language Model)** | AI models trained on vast text data that can understand and generate human-like text (e.g., GPT-4, Claude) |
+| **Prompt** | The input/instruction you give to an AI model to get a specific response |
+| **MCP (Model Context Protocol)** | A standard protocol for connecting AI models to external tools, data sources, and services |
+| **Reasoning** | The AI's ability to break down problems, think step-by-step, and arrive at logical conclusions |
+| **Tool calling** | An agent's ability to use external tools (APIs, databases, web search) to accomplish tasks |
+| **Workflow** | A defined sequence of steps or agent interactions to complete a task |
+| **Telemetry** | Data collected about agent performance, interactions, and behavior for monitoring and debugging |
+| **Guardrails** | Safety mechanisms that prevent agents from producing harmful or incorrect outputs |
+| **Human-in-the-loop** | A pattern where human approval is required at certain points in an agent workflow |
+| **Evaluation** | Testing and measuring agent performance using metrics, test cases, or human review |
+| **Foundry** | Microsoft's cloud platform for building, deploying, and managing AI applications and agents |
+
+---
+
+## 🔧 Troubleshooting
+
+### Common Issues and Solutions
+
+| Issue | Solution |
+|-------|----------|
+| `ModuleNotFoundError: No module named 'azure'` | Run `pip install -r requirements.txt` in your activated virtual environment |
+| `AuthenticationError` | Verify your API key in `.env` is correct and hasn't expired |
+| `Connection refused` errors | Check your Azure endpoint URL and internet connection |
+| `RateLimitError` | You've exceeded API limits - wait a few minutes or check your Azure quotas |
+| Python command not found | Ensure Python is installed and added to your PATH |
+| Virtual environment not activating | On Windows, you may need to run `Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned` first |
+
+### Getting Help
+1. Search existing [GitHub Issues](../../issues) for solutions
+2. Ask in the Discord [#agentsleague channel](https://aka.ms/agentsleague/discord)
+3. Open a new issue using our [Technical Question template](../../issues/new?template=technical-question.md)
+
+---
+
+## Resources
 
 Explore the following additional resources to deepen your knowledge and accelerate your development:
 
