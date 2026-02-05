@@ -96,7 +96,18 @@ Open a new issue in this repo using the [project submission template](https://gi
 
 ### 6. Join the Community
 
-**[Discord](https://aka.ms/agentsleague/discord)** - Get help, share progress, vote for favorites
+Get help, share progress, vote for favorites
+
+[![Agents League Discord](https://img.shields.io/badge/Discord-Agents_League_Discord_Channel-yellow?style=for-the-badge&logo=github&color=00001&logoColor=fff)](https://aka.ms/agentsleague/discord)
+
+Community and Guidance 
+
+[![Microsoft Foundry Discord](https://dcbadge.limes.pink/api/server/nTYy5BXMWG)](https://discord.gg/nTYy5BXMWG)
+
+If you have product feedback or errors while building visit:
+
+[![Microsoft Foundry Developer Forum](https://img.shields.io/badge/GitHub-Microsoft_Foundry_Developer_Forum-blue?style=for-the-badge&logo=github&color=000000&logoColor=fff)](https://aka.ms/foundry/forum)
+
 
 ## Judging
 
