@@ -304,7 +304,65 @@ To learn more about GitHub Copilot's capabilities and plans, visit: [GitHub Copi
 
 ---
 
-## 📋 Requirements & Evaluation
+## Security & Disclaimer
+
+### Important: Protect Confidential Information
+
+⚠️ **Before submitting your project, please read our [Disclaimer](../../../DISCLAIMER.md).** This is a public repository accessible worldwide.
+
+#### What You Must NOT Include:
+
+- ❌ API keys, passwords, tokens, or credentials
+- ❌ Customer data or personally identifiable information (PII)
+- ❌ Confidential or proprietary company information
+- ❌ Internal engineering projects not approved for open source
+- ❌ Pre-release product information under NDA
+- ❌ Trade secrets or proprietary algorithms
+
+#### Security Best Practices:
+
+✅ **Use environment variables** - Store sensitive configuration in `.env` files (never commit these!)
+
+```bash
+# .env (add to .gitignore)
+API_KEY=your-key-here
+DATABASE_URL=your-connection-string
+```
+
+✅ **Review commit history** - Before pushing, check that no secrets were accidentally committed
+
+✅ **Use `.gitignore`** - Ensure sensitive files are excluded:
+
+```gitignore
+.env
+.env.local
+**/secrets/
+config/secrets.*
+*.pem
+*.key
+```
+
+✅ **Scan for secrets** - Use tools like [git-secrets](https://github.com/awslabs/git-secrets) or GitHub's secret scanning
+
+✅ **Use demo data only** - Never use real customer or production data in examples
+
+#### GitHub Secret Protection
+
+GitHub automatically scans for exposed secrets and will alert you if credentials are detected. Enable push protection in your repository settings for additional safety.
+
+#### Legal & Licensing
+
+By submitting to Agents League:
+- You confirm all content is your original work or properly licensed
+- You grant Microsoft a non-exclusive license to use your submission for the competition
+- You agree to the repository's [MIT License](../../../LICENSE)
+- You've read and agree to the [Code of Conduct](../../../CODE_OF_CONDUCT.md)
+
+For complete details, see the [Disclaimer](../../../DISCLAIMER.md).
+
+---
+
+## Requirements & Evaluation
 
 Your solution will be evaluated based on the following criteria. We're looking for projects that demonstrate both technical excellence and creative innovation:
 

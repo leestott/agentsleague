@@ -35,7 +35,7 @@ Found a bug? [Open an issue](https://github.com/microsoft/agentsleague/issues/ne
 
 ### Adding Community Resources
 
-Have a helpful guide or tool? Share it in [Discord](https://aka.ms/agents-league-discord) or open an issue to suggest adding it to the README.
+Have a helpful guide or tool? Share it in [Discord](https://aka.ms/agentsleague/discord) or open an issue to suggest adding it to the README.
 
 ## 📋 Pull Request Guidelines
 
@@ -144,7 +144,7 @@ async function processQuery(query: string): Promise<AgentResponse> {
 
 ## 📧 Questions?
 
-- Ask on [Discord](https://aka.ms/agents-league-discord) in #general
+- Ask on [Discord](https://aka.ms/agentsleague/discord) in #general
 - Email: <aycabas@microsoft.com>
 - Open an issue for discussion
 

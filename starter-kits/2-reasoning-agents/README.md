@@ -198,7 +198,91 @@ When designing your reasoning agents and multi-agent workflows, consider applyin
 
 ---
 
-## 📋 Requirements & Evaluation
+## Security & Disclaimer
+
+### Important: Protect Confidential Information
+
+⚠️ **Before submitting your project, please read our [Disclaimer](../../../DISCLAIMER.md).** This is a public repository accessible worldwide.
+
+#### What You Must NOT Include:
+
+- ❌ Azure API keys, connection strings, or credentials
+- ❌ Customer data or personally identifiable information (PII)
+- ❌ Confidential or proprietary company information
+- ❌ Internal engineering projects not approved for open source
+- ❌ Pre-release product information under NDA
+- ❌ Trade secrets or proprietary algorithms
+
+#### Azure-Specific Security Best Practices:
+
+✅ **Never commit `.env` files** - Store Azure credentials in environment variables:
+
+```bash
+# .env (add to .gitignore immediately!)
+AZURE_AI_PROJECT_CONNECTION_STRING=your-connection-string
+AZURE_OPENAI_API_KEY=your-api-key
+AZURE_SUBSCRIPTION_ID=your-subscription-id
+```
+
+✅ **Use Azure Key Vault** - For production apps, store secrets in Azure Key Vault:
+
+```python
+from azure.identity import DefaultAzureCredential
+from azure.keyvault.secrets import SecretClient
+
+credential = DefaultAzureCredential()
+client = SecretClient(vault_url="https://your-vault.vault.azure.net/", credential=credential)
+api_key = client.get_secret("openai-api-key").value
+```
+
+✅ **Enable Managed Identities** - Use Azure Managed Identities to authenticate without storing credentials
+
+✅ **Review `.gitignore`** - Ensure these patterns are included:
+
+```gitignore
+.env
+.env.*
+.azure/
+**/.secrets/
+config/secrets.*
+*.pem
+*.key
+```
+
+✅ **Use demo data only** - Never use real customer data or production datasets
+
+✅ **Scan for secrets** - Run secret detection before pushing:
+
+```bash
+# Install and use git-secrets
+git secrets --scan
+```
+
+#### Responsible AI Considerations
+
+When building reasoning agents:
+
+- **Implement guardrails** - Validate inputs and outputs to prevent harmful content
+- **Add content filters** - Use Azure Content Safety API to detect inappropriate content
+- **Test for biases** - Evaluate agent responses for fairness across different scenarios
+- **Provide transparency** - Clearly indicate to users when they're interacting with AI
+- **Enable human oversight** - Include human-in-the-loop patterns for critical decisions
+
+Learn more: [Responsible AI in Microsoft Foundry](https://learn.microsoft.com/azure/ai-foundry/responsible-use-of-ai-overview)
+
+#### Legal & Licensing
+
+By submitting to Agents League:
+- You confirm all content is your original work or properly licensed
+- You grant Microsoft a non-exclusive license to use your submission for the competition
+- You agree to the repository's [MIT License](../../../LICENSE)
+- You've read and agree to the [Code of Conduct](../../../CODE_OF_CONDUCT.md)
+
+For complete details, see the [Disclaimer](../../../DISCLAIMER.md).
+
+---
+
+## Requirements & Evaluation
 
 ### ✅ Submission Requirements
 
